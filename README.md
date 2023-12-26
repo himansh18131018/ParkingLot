@@ -13,4 +13,4 @@ Parking Lot Using Java in Spring Boot Framework
 
 
 
-* Disclaimer - Frontend and Corner cases coding in progress.
+Disclaimer - Frontend and Corner cases coding in progress.
