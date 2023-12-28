@@ -11,6 +11,9 @@ Parking Lot Using Java in Spring Boot Framework
 * GET http://localhost:8080/parking/open-spots?parkingLotName=ParkingLot3 to get the available spots in a parking lot
 * DELETE http://localhost:8080/parking/removeVehicle?vehicleId=13&parkingLotName={name} to remove vehicle and make spot available.
 
+You can use React in frontend like me to simple fetch API's and display data
 
+ScreenShot
 
-Disclaimer - Frontend and Corner cases coding in progress.
+<img width="1792" alt="Screenshot 2023-12-28 at 4 44 01 PM" src="https://github.com/himansh18131018/ParkingLot/assets/60508244/357a5123-cadd-4899-9990-94dac2bec6fe">
+
