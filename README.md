@@ -8,7 +8,7 @@ Parking Lot Using Java in Spring Boot Framework
     "vehicleId":"13",
     "type":"MOTORCYCLE"
 } for adding vehicle to the available spot if found.
-* GET http://localhost:8080/parking/open-spots?parkingLotName=ParkingLot3 to get the available spots in a parking lot
+* GET http://localhost:8080/parking/open-spots?parkingLotName=ParkingLot3&occupiedSpot=true to get the available spots or occupied spots depending on occupiedSpot value in a parking lot
 * DELETE http://localhost:8080/parking/removeVehicle?vehicleId=13&parkingLotName={name} to remove vehicle and make spot available.
 
 You can use React in frontend like me to simple fetch API's and display data
