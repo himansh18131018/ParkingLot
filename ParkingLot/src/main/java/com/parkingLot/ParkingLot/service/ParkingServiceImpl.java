@@ -94,14 +94,20 @@ public class ParkingServiceImpl implements ParkingService{
     }
 
     @Override
-    public List<ParkingSpot> getOpenSpots(String parkingLotName){
+    public List<ParkingSpot> getOpenSpots(String parkingLotName, boolean occupiedSpot){
         ParkingLot parkingLot = parkingLotRepository.findByName(parkingLotName);
         if (parkingLot != null) {
             List<ParkingSpot> openSpots = new ArrayList<>();
+            List<ParkingSpot> occupiedSpots = new ArrayList<>();
             for (ParkingSpot spot: parkingLot.getSpots()) {
                 if (spot.getParkedVehicle() == null) {
                     openSpots.add(spot);
+                } else {
+                    occupiedSpots.add(spot);
                 }
+            }
+            if (occupiedSpot) {
+                return occupiedSpots;
             }
             return openSpots;
         } else {

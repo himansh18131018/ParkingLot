@@ -14,5 +14,5 @@ public interface ParkingService {
 
     ParkingSpot findSpotById(String spotId, String parkingLotName);
 
-    List<ParkingSpot> getOpenSpots(String parkingLotName);
+    List<ParkingSpot> getOpenSpots(String parkingLotName, boolean occupiedSpot);
 }

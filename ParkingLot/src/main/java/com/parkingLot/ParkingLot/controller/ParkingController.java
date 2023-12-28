@@ -48,8 +48,8 @@ public class ParkingController {
     }
 
     @GetMapping("/open-spots")
-    public ResponseEntity<List<ParkingSpot>> getOpenSpots(@RequestParam String parkingLotName) {
-        List<ParkingSpot> openSpots = parkingService.getOpenSpots(parkingLotName);
+    public ResponseEntity<List<ParkingSpot>> getOpenSpots(@RequestParam String parkingLotName, @RequestParam boolean occupiedSpot) {
+        List<ParkingSpot> openSpots = parkingService.getOpenSpots(parkingLotName, occupiedSpot);
         return ResponseEntity.ok(openSpots);
     }
 }
